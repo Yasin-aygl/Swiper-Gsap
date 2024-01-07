@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Park Tersanesi</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="max-w-[1920px]">
+    <!-- NAVBAR -->
+    <header class="bg-white fixed top-0 z-50 w-full shadow-lg">
+      <nav
+        class="flex justify-between items-center w-[100%] px-5 lg:w-[88%] lg:mx-auto py-[10px] lg:py-[20px] "
+      >
+        <div class="w-[125px] lg:w-[205px] z-[100]">
+          <img src="../assets/headerLogo.png" alt="Logo" />
+        </div>
+
+        <div
+          id="nav-links"
+          class="duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 top-0 -translate-y-full lg:-translate-y-0 [&.active]:translate-y-0 lg:w-auto w-full flex items-center px-5 z-10"
+        >
+          <ul
+            class="flex flex-col lg:flex-row lg:items-center lg:gap-[70px] gap-8"
+          >
+            <li
+              class="whitespace-nowrap text-[#003651] font-medium leading-normal hover:border-b-2 border-[#FF7000] mb-[-2px] hover:mb-[-5.2px]"
+            >
+              <a href="#">About Us</a>
+            </li>
+            <li
+              class="whitespace-nowrap text-[#003651] font-medium leading-normal hover:border-b-2 border-[#FF7000] mb-[-2px] hover:mb-[-5px]"
+            >
+              <a href="#">Human Resources</a>
+            </li>
+            <li
+              class="whitespace-nowrap text-[#003651] font-medium leading-normal hover:border-b-2 border-[#FF7000] hover:mb-[-2px]"
+            >
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="whitespace-nowrap text-[#003651] font-medium leading-normal hover:border-b-2 border-[#FF7000] mb-[-2px] hover:mb-[-5px]"
+            >
+              <a href="#">Sustainability</a>
+            </li>
+            <li
+              class="whitespace-nowrap text-[#003651] font-medium leading-normal hover:border-b-2 border-[#FF7000] mb-[-2px] hover:mb-[-5px]"
+            >
+              <a href="#">Layout</a>
+            </li>
+            <li
+              class="whitespace-nowrap text-[#003651] font-medium leading-normal hover:border-b-2 border-[#FF7000] mb-[-2px] hover:mb-[-5px]"
+            >
+              <a href="#"> Media</a>
+            </li>
+            <li
+              class="whitespace-nowrap text-[#003651] font-medium leading-normal hover:border-b-2 border-[#FF7000] mb-[-2px] hover:mb-[-5px]"
+            >
+              <a href="#"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center lg:hidden duration-200 z-[100]">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu-outline"
+            class="text-5xl cursor-pointer text-[#004F71]"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="flex flex-col items-center justify-center overflow-hidden isolate"
+    >
+      <!-- SLİDER -->
+      <section
+        class="flex justify-center items-center bg-[url('../assets/Rectangle.png')] w-full h-[900px]"
+      ></section>
+      <!-- ABOUT US  -->
+      <section
+        class="relative flex justify-center items-center my-[50px] md:my-[100px]"
+      >
+        <div
+          class="absolute -z-40 block w-auto h-auto lg:w-[1142px] lg:h-[1142px]"
+        >
+          <img src="../assets/gradient.png" alt="gradient" />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center text-center px-7 md:px-0"
+        >
+          <h3
+            class="text-[#FF7000] text-[12px] font-bold tracking-[3.6px] mb-5"
+          >
+            Park Tersanesi
+          </h3>
+          <p
+            class="text-[#003651] text-[18px] font-bold leading-[34px] mb-5 md:text-[32px] md:max-w-[1354px] md:leading-[48px] md:mb-10"
+          >
+            Park Shipyard has emerged as a collaboration between two established
+            maritime leaders to bring warmth and professionalism to the
+            industry.
+          </p>
+          <p
+            class="text-[#003651] text-[16px] font-normal leading-[20px] mb-[40px] md:w-[778px] md:text-[20px] md:leading-[30px] md:mb-[60px]"
+          >
+            With extensive experience in shipbuilding, shiprepair, ownership,
+            and management, BesiktasShipyard and Düzgit Yalova Shipyard have
+            come together to create a shipyard that embodies our shared
+            commitment to excellence.
+          </p>
+          <button
+            class="w-[143px] h-[52px] bg-[#FF7000] text-white text-[12px] font-normal inline-flex justify-center items-center rounded-full md:text-[18px]"
+          >
+            Read More
+          </button>
+        </div>
+      </section>
+      <!-- OUR SERVICES -->
+      <section
+        id="services"
+        class="w-full flex flex-col justify-center items-center px-0 lg:flex-row lg:justify-between lg:items-end bg-[url('../assets/Rectangle2.png')] lg:w-[1920px] h-[1050px] lg:h-[880px] lg:px-[190px] transition duration-700 ease-in-out"
+      >
+        <!-- left -->
+        <div class="mb-[120px] cursor-pointer flex items-center flex-col lg:items-start">
+          <img src="../assets/01.png" alt="Ship building" class="mb-[30px] mt-[50px lg:mt-0]" />
+          <p
+          id="textLeft"
+            class=" text-white text-[40px] lg:text-[80px] font-bold leading-[82px] mb-[25px] lg:mb-[50px] whitespace-nowrap"
+          >
+            Ship Building
+          </p>
+          <p
+            class="text-center lg:text-start w-full px-4 lg:w-[578.13px] lg:px-0 text-white text-opacity-80 text-xl font-normal leading-[30px]"
+          >
+            With extensive experience in shipbuilding, shiprepair, ownership,
+            and management, BesiktasShipyard and Düzgit Yalova Shipyard have
+            come together to create a shipyard that embodies our shared
+            commitment to excellence.
+          </p>
+          <button
+            id="leftButton"
+            class="w-[144px] h-[50px] bg-orange-500 rounded-full text-white text-lg font-medium mt-[60px]"
+          >
+            Read More
+          </button>
+        </div>
+        <!-- center Line  -->
+        <div class="hidden lg:block h-[880px] w-[2px] bg-white bg-opacity-20 "></div>
+        <!-- right  -->
+        <div id="hoverRight" class="mb-[40px] lg:mb-[120px] cursor-pointer flex items-center flex-col lg:items-start">
+          <img src="../assets/02.png" alt="ship repair" class="mb-[30px]" />
+          <p
+            id="textRight"
+            class=" text-white text-[40px] lg:text-[80px] font-bold leading-[82px] mb-[25px] lg:mb-[50px] whitespace-nowrap"
+          >
+            Ship Repair
+          </p>
+          <p
+          class="text-center lg:text-start w-full px-4 lg:w-[578.13px] lg:px-0 text-white text-opacity-80 text-xl font-normal leading-[30px]"
+          >
+            With extensive experience in shipbuilding, shiprepair, ownership,
+            and management, BesiktasShipyard and Düzgit Yalova Shipyard have
+            come together to create a shipyard that embodies our shared
+            commitment to excellence.
+          </p>
+          <button
+            id="rightButton"
+            class="w-[144px] h-[50px] bg-orange-500 rounded-full text-white text-lg font-medium mt-[60px] hidden"
+          >
+            Read More
+          </button>
+        </div>
+      </section>
+      <!-- WE ARE SOCİAL  -->
+      <section
+        class="my-[30px] relative lg:flex lg:flex-row lg:justify-between lg:w-[1920px] lg:my-[120px] lg:bg-white"
+      >
+        <div>
+          <img
+            class="absolute -z-40 block lg:hidden"
+            src="../assets/gradient.png"
+            alt="gradient"
+          />
+        </div>
+        <!-- LEFT -->
+        <div class="w-1/2 relative hidden lg:block">
+          <svg
+            class="absolute right-[119px]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="651"
+            height="430"
+            viewBox="0 0 651 430"
+            fill="none"
+          >
+            <path
+              d="M435.598 430C714.335 430.271 726.754 11.8779 448.285 0.343309C442.408 0.0583248 436.484 0.006005 430.514 0.000207935C192.542 -0.230857 -0.231336 192.144 0.000208366 429.623L435.598 430Z"
+              fill="#FF7000"
+            />
+          </svg>
+          <div class="ship absolute top-[115px] left-[-600px]">
+            <img src="../assets/gemi 1.png" alt="gemi" class="cursor-pointer" />
+          </div>
+        </div>
+        <!-- RİGHT -->
+        <div class="text-center my-10 lg:w-1/2 lg:mt-[60px] lg:text-start">
+          <p
+            class="shipStart text-[40px] text-[#004f71] font-bold leading-[64px] lg:text-[40px]"
+          >
+            We are social
+          </p>
+          <p class="text-[#9A9B9D] text-[32px] leading-[48px] font-normal mt-5">
+            Follow us on our social media accounts.
+          </p>
+          <!-- ICONS -->
+          <div
+            class="flex flex-row justify-around lg:justify-normal lg:gap-[109px] mt-[57px]"
+          >
+            <!-- instagram -->
+            <div
+              class="flex flex-col justify-center items-center text-[24px] text-[#004F71] leading-9 font-normal duration-100 hover:font-bold hover:ml-[-5px] hover:mr-[-3.5px]"
+            >
+              <div
+                class="w-[70px] h-[70px] rounded-full bg-[#004f710d] flex items-center justify-center duration-100 hover:cursor-pointer hover:bg-[#fff] hover:border-2 border-orange-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_461_509)">
+                    <path
+                      d="M27.9703 8.23208C27.9047 6.74433 27.6641 5.72152 27.3195 4.83523C26.9639 3.89447 26.417 3.0522 25.7003 2.35202C25.0001 1.64095 24.1523 1.08841 23.2225 0.738426C22.331 0.393784 21.3136 0.153198 19.8258 0.0876025C18.327 0.0164522 17.8511 0 14.0496 0C10.2481 0 9.77226 0.0164522 8.27895 0.0820473C6.7912 0.147642 5.76839 0.388443 4.88232 0.73287C3.94134 1.08841 3.09908 1.63539 2.3989 2.35202C1.68782 3.0522 1.1355 3.90002 0.785301 4.82989C0.440659 5.72152 0.200073 6.73877 0.134478 8.22652C0.0633272 9.72538 0.046875 10.2012 0.046875 14.0027C0.046875 17.8043 0.0633272 18.2801 0.128922 19.7734C0.194517 21.2611 0.435318 22.284 0.779959 23.1702C1.1355 24.111 1.68782 24.9533 2.3989 25.6535C3.09908 26.3645 3.9469 26.9171 4.87677 27.267C5.76839 27.6117 6.78565 27.8523 8.27361 27.9179C9.7667 27.9837 10.2427 27.9999 14.0443 27.9999C17.8458 27.9999 18.3216 27.9837 19.8149 27.9179C21.3027 27.8523 22.3255 27.6117 23.2116 27.267C25.0933 26.5395 26.5811 25.0518 27.3086 23.1702C27.653 22.2786 27.8938 21.2611 27.9594 19.7734C28.025 18.2801 28.0415 17.8043 28.0415 14.0027C28.0415 10.2012 28.0359 9.72538 27.9703 8.23208ZM25.4488 19.664C25.3886 21.0315 25.1589 21.7699 24.9675 22.2622C24.497 23.482 23.5289 24.4501 22.309 24.9206C21.8168 25.112 21.073 25.3417 19.7109 25.4018C18.234 25.4676 17.7911 25.4838 14.0552 25.4838C10.3192 25.4838 9.87076 25.4676 8.39925 25.4018C7.03179 25.3417 6.29337 25.112 5.80108 24.9206C5.19406 24.6962 4.64152 24.3407 4.19304 23.8758C3.72811 23.4217 3.37257 22.8747 3.14822 22.2677C2.95678 21.7754 2.72709 21.0315 2.66705 19.6696C2.60124 18.1927 2.585 17.7496 2.585 14.0136C2.585 10.2777 2.60124 9.82922 2.66705 8.35793C2.72709 6.99047 2.95678 6.25205 3.14822 5.75976C3.37257 5.15253 3.72811 4.6002 4.1986 4.15151C4.65242 3.68657 5.1994 3.33103 5.80664 3.1069C6.29892 2.91546 7.0429 2.68577 8.4048 2.62551C9.88165 2.55992 10.3248 2.54347 14.0605 2.54347C17.802 2.54347 18.2449 2.55992 19.7164 2.62551C21.0839 2.68577 21.8223 2.91546 22.3146 3.1069C22.9216 3.33103 23.4742 3.68657 23.9226 4.15151C24.3876 4.60554 24.7431 5.15253 24.9675 5.75976C25.1589 6.25205 25.3886 6.99581 25.4488 8.35793C25.5144 9.83478 25.5309 10.2777 25.5309 14.0136C25.5309 17.7496 25.5144 18.1871 25.4488 19.664Z"
+                      fill="#004F71"
+                    />
+                    <path
+                      d="M14.0522 6.80859C10.0812 6.80859 6.85938 10.0302 6.85938 14.0014C6.85938 17.9726 10.0812 21.1942 14.0522 21.1942C18.0234 21.1942 21.245 17.9726 21.245 14.0014C21.245 10.0302 18.0234 6.80859 14.0522 6.80859ZM14.0522 18.6672C11.476 18.6672 9.38639 16.5778 9.38639 14.0014C9.38639 11.425 11.476 9.33561 14.0522 9.33561C16.6286 9.33561 18.718 11.425 18.718 14.0014C18.718 16.5778 16.6286 18.6672 14.0522 18.6672Z"
+                      fill="#004F71"
+                    />
+                    <path
+                      d="M23.2102 6.52587C23.2102 7.45318 22.4583 8.20506 21.5308 8.20506C20.6034 8.20506 19.8516 7.45318 19.8516 6.52587C19.8516 5.59835 20.6034 4.84668 21.5308 4.84668C22.4583 4.84668 23.2102 5.59835 23.2102 6.52587Z"
+                      fill="#004F71"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_461_509">
+                      <rect width="28" height="28" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="mt-[15px]">Instagram</p>
+            </div>
+            <!-- linkedin -->
+            <div
+              class="flex flex-col justify-center items-center text-[24px] text-[#004F71] leading-9 font-normal hover:font-bold hover:ml-[-4px] hover:mr-[-4px]"
+            >
+              <div
+                class="w-[70px] h-[70px] rounded-full bg-[#004f710d] flex items-center justify-center hover:cursor-pointer hover:bg-[#fff] hover:border-2 border-orange-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_461_501)">
+                    <path
+                      d="M27.9954 28.0025L28.0024 28.0014V17.7324C28.0024 12.7087 26.9209 8.83887 21.0479 8.83887C18.2246 8.83887 16.3299 10.3882 15.5564 11.857H15.4748V9.30787H9.90625V28.0014H15.7046V18.745C15.7046 16.3079 16.1666 13.9512 19.1848 13.9512C22.1586 13.9512 22.2029 16.7325 22.2029 18.9014V28.0025H27.9954Z"
+                      fill="#004F71"
+                    />
+                    <path
+                      d="M0.460938 9.30664H6.26627V28.0001H0.460938V9.30664Z"
+                      fill="#004F71"
+                    />
+                    <path
+                      d="M3.36233 0C1.50617 0 0 1.50617 0 3.36233C0 5.2185 1.50617 6.75617 3.36233 6.75617C5.2185 6.75617 6.72467 5.2185 6.72467 3.36233C6.7235 1.50617 5.21733 0 3.36233 0Z"
+                      fill="#004F71"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_461_501">
+                      <rect width="28" height="28" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="mt-[15px]">Linkedin</p>
+            </div>
+            <!-- facebook -->
+            <div
+              class="flex flex-col justify-center items-center text-[24px] text-[#004F71] leading-9 font-normal hover:font-bold hover:ml-[-4px] hover:mr-[-2px]"
+            >
+              <div
+                class="w-[70px] h-[70px] rounded-full bg-[#004f710d] flex items-center justify-center hover:cursor-pointer hover:bg-[#fff] hover:border-2 border-orange-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <path
+                    d="M18.6637 4.64917H21.2199V0.197167C20.7789 0.1365 19.2623 0 17.4959 0C9.40858 0 11.6089 9.15833 11.2869 10.5H7.21875V15.477H11.2858V28H16.2721V15.4782H20.1746L20.7941 10.5012H16.2709C16.4903 7.2065 15.3831 4.64917 18.6637 4.64917Z"
+                    fill="#004F71"
+                  />
+                </svg>
+              </div>
+              <p class="mt-[15px]">Facebook</p>
+            </div>
+            <!-- youtube -->
+            <div
+              class="flex flex-col justify-center items-center text-[24px] text-[#004F71] leading-9 font-normal hover:font-bold hover:ml-[-4px] hover:mr-[-4.5px]"
+            >
+              <div
+                class="w-[70px] h-[70px] rounded-full bg-[#004f710d] flex items-center justify-center hover:cursor-pointer hover:bg-[#fff] hover:border-2 border-orange-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <path
+                    d="M13.999 26.25C13.9966 26.25 13.9941 26.25 13.9915 26.25C13.1466 26.243 5.67751 26.1605 3.56136 25.4675C2.08245 24.9862 0.915001 23.5741 0.51638 21.7832C-0.0373308 19.2661 -0.00208297 14.4201 0.00176224 14.0331C-0.00186934 13.648 -0.0375444 8.76182 0.514671 6.22409C0.515312 6.22176 0.515739 6.21917 0.51638 6.21684C0.910515 4.4463 2.10424 2.99055 3.55773 2.50788C3.56136 2.50659 3.56521 2.50555 3.56884 2.50426C5.66106 1.83846 13.1449 1.75698 13.9915 1.75H14.0067C14.8537 1.75698 22.3427 1.8395 24.4394 2.53349C25.9144 3.01357 27.081 4.42379 27.4807 6.21245C28.0552 8.752 28.002 13.6487 27.9962 14.0621C28.0003 14.4692 28.0338 19.2718 27.4833 21.8015C27.4829 21.8041 27.4822 21.8064 27.4818 21.8088C27.083 23.5997 25.9157 25.0118 24.4351 25.4937C24.4332 25.4944 24.431 25.495 24.4291 25.4957C22.3371 26.1613 14.853 26.2428 14.0067 26.25C14.0041 26.25 14.0015 26.25 13.999 26.25ZM2.62911 6.90333C2.14291 9.14335 2.18883 13.9671 2.18926 14.0158V14.0507C2.17474 15.3885 2.22579 19.2627 2.62933 21.0977C2.825 21.9764 3.40072 22.6724 4.13088 22.9102C5.69225 23.4215 11.7756 23.5824 13.999 23.6013C16.2281 23.5824 22.3205 23.4259 23.8703 22.935C24.5981 22.6965 25.1719 22.0028 25.3689 21.1231C25.7728 19.2612 25.8234 15.4058 25.8087 14.0766C25.8087 14.0626 25.8087 14.0486 25.8089 14.0347C25.829 12.6808 25.7895 8.76131 25.3708 6.91161C25.3703 6.9098 25.3699 6.90799 25.3697 6.90618C25.1732 6.02362 24.5972 5.32756 23.8671 5.08985C22.3209 4.57796 16.2277 4.41759 13.999 4.3987C11.7713 4.41759 5.68499 4.57382 4.13045 5.06424C3.41418 5.3048 2.82543 6.02569 2.62911 6.90333ZM11.211 19.3634V8.63637L18.8672 14L11.211 19.3634Z"
+                    fill="#004F71"
+                  />
+                </svg>
+              </div>
+              <p class="mt-[15px]">Youtube</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER  -->
+      <footer
+        class="bg-[url('../assets/footer.png')] lg:max-w-[1920px] max-h-[744px] py-[40px] lg:pl-[200px] lg:pr-[200px] lg:py-[80px]"
+      >
+        <!-- logo & socials & mail  -->
+        <div
+          class="flex flex-col justify-center items-center lg:flex-row lg:justify-between"
+        >
+          <!-- logo -->
+          <div>
+            <img
+              src="../assets/logo.svg"
+              alt="logo"
+              class="footerLogo w-[80px] h-[80px] inline-block lg:mr-[10px] lg:w-[99px] lg:h-[99px]"
+            />
+            <img
+              src="../assets/logoText.svg"
+              alt="logotext"
+              class="inline-block w-[141px] h-[45px] lg:w-[181px] lg:h-[65px]"
+            />
+          </div>
+          <!-- social  -->
+          <div
+            class="flex flex-row items-center justify-center gap-[16px] my-[30px] lg:my-0"
+          >
+            <!-- facebook -->
+            <div
+              class="flex justify-center items-center w-[50px] h-[50px] hover:cursor-pointer rounded-full hover:border-2 border-orange-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M11.9981 2.98875H13.6414V0.12675C13.3579 0.08775 12.3829 0 11.2474 0C6.04838 0 7.46288 5.8875 7.25588 6.75H4.64062V9.9495H7.25513V18H10.4606V9.95025H12.9694L13.3676 6.75075H10.4599C10.6009 4.63275 9.88912 2.98875 11.9981 2.98875Z"
+                  fill="white"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </div>
+            <!-- X -->
+            <div
+              class="flex justify-center items-center w-[50px] h-[50px] hover:cursor-pointer rounded-full hover:border-2 border-orange-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_653_1057)">
+                  <path
+                    d="M10.9255 7.62177L17.4823 0H15.9285L10.2352 6.61788L5.68803 0H0.443359L7.31963 10.0074L0.443359 18H1.9972L8.00946 11.0113L12.8116 18H18.0563L10.9251 7.62177H10.9255ZM8.79726 10.0956L8.10055 9.09906L2.55708 1.16971H4.94369L9.41734 7.56895L10.114 8.56546L15.9293 16.8835H13.5426L8.79726 10.096V10.0956Z"
+                    fill="white"
+                    fill-opacity="0.6"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_653_1057">
+                    <rect
+                      width="18"
+                      height="18"
+                      fill="white"
+                      transform="translate(0.25)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <!-- linkedin  -->
+            <div
+              class="flex justify-center items-center w-[50px] h-[50px] hover:cursor-pointer rounded-full hover:border-2 border-orange-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_653_1053)">
+                  <path
+                    d="M18.4959 18.0011L18.5004 18.0004V11.3989C18.5004 8.16939 17.8052 5.68164 14.0297 5.68164C12.2147 5.68164 10.9967 6.67764 10.4994 7.62189H10.4469V5.98314H6.86719V18.0004H10.5947V12.0499C10.5947 10.4831 10.8917 8.96814 12.8319 8.96814C14.7437 8.96814 14.7722 10.7561 14.7722 12.1504V18.0011H18.4959Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M0.796875 5.9834H4.52888V18.0006H0.796875V5.9834Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M2.6615 0C1.46825 0 0.5 0.96825 0.5 2.1615C0.5 3.35475 1.46825 4.34325 2.6615 4.34325C3.85475 4.34325 4.823 3.35475 4.823 2.1615C4.82225 0.96825 3.854 0 2.6615 0Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_653_1053">
+                    <rect
+                      width="18"
+                      height="18"
+                      fill="white"
+                      transform="translate(0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <!-- youtube -->
+            <div
+              class="flex justify-center items-center w-[50px] h-[50px] hover:cursor-pointer rounded-full hover:border-2 border-orange-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_653_1051)">
+                  <path
+                    d="M9.74935 16.875C9.74784 16.875 9.74619 16.875 9.74454 16.875C9.2014 16.8705 4.39983 16.8175 3.03945 16.372C2.08872 16.0625 1.33821 15.1548 1.08196 14.0035C0.726002 12.3854 0.748661 9.27004 0.751133 9.02128C0.748798 8.77369 0.725864 5.6326 1.08086 4.0012C1.08127 3.9997 1.08155 3.99804 1.08196 3.99654C1.33533 2.85833 2.10273 1.92249 3.03711 1.61221C3.03945 1.61138 3.04192 1.61071 3.04425 1.60988C4.38926 1.18187 9.2003 1.12949 9.74454 1.125H9.75429C10.2988 1.12949 15.1131 1.18253 16.461 1.62867C17.4093 1.93729 18.1592 2.84387 18.4162 3.99372C18.7855 5.62628 18.7513 8.77419 18.7476 9.03991C18.7502 9.30164 18.7717 12.389 18.4178 14.0153C18.4176 14.0169 18.4171 14.0184 18.4169 14.0199C18.1605 15.1713 17.4101 16.079 16.4583 16.3888C16.457 16.3893 16.4557 16.3896 16.4544 16.3901C15.1096 16.818 10.2984 16.8703 9.75429 16.875C9.75264 16.875 9.75099 16.875 9.74935 16.875ZM2.44014 4.43786C2.12758 5.87787 2.15711 8.97888 2.15738 9.01014V9.03259C2.14804 9.89261 2.18087 12.3832 2.44028 13.5628C2.56607 14.1277 2.93618 14.5751 3.40557 14.728C4.40931 15.0567 8.32003 15.1601 9.74935 15.1723C11.1824 15.1601 15.0989 15.0595 16.0952 14.7439C16.5631 14.5906 16.9319 14.1446 17.0585 13.5791C17.3182 12.3822 17.3508 9.90375 17.3413 9.04922C17.3413 9.04024 17.3413 9.03126 17.3414 9.02228C17.3544 8.15196 17.329 5.63227 17.0598 4.44318C17.0595 4.44201 17.0592 4.44085 17.0591 4.43969C16.9328 3.87233 16.5625 3.42486 16.0931 3.27205C15.0991 2.94297 11.1821 2.83988 9.74935 2.82774C8.31728 2.83988 4.40464 2.94031 3.40529 3.25558C2.94483 3.41023 2.56635 3.87366 2.44014 4.43786ZM7.95706 12.4479V5.55195L12.8789 9L7.95706 12.4479Z"
+                    fill="white"
+                    fill-opacity="0.6"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_653_1051">
+                    <rect
+                      width="18"
+                      height="18"
+                      fill="white"
+                      transform="translate(0.75)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <!-- instagram  -->
+            <div
+              class="flex justify-center items-center w-[50px] h-[50px] hover:cursor-pointer rounded-full hover:border-2 border-orange-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_653_1047)">
+                  <path
+                    d="M17.982 5.29205C17.9399 4.33564 17.7852 3.67812 17.5636 3.10836C17.3351 2.50359 16.9834 1.96213 16.5228 1.51201C16.0726 1.05489 15.5276 0.699691 14.9298 0.474702C14.3568 0.253147 13.7027 0.0984842 12.7463 0.0563159C11.7827 0.0105764 11.4768 0 9.03301 0C6.58917 0 6.28328 0.0105764 5.3233 0.0527447C4.36689 0.0949129 3.70937 0.249713 3.13975 0.471131C2.53484 0.699691 1.99338 1.05132 1.54326 1.51201C1.08614 1.96213 0.731078 2.50716 0.505952 3.10493C0.284397 3.67812 0.129734 4.33207 0.0875659 5.28848C0.0418264 6.25203 0.03125 6.55792 0.03125 9.00176C0.03125 11.4456 0.0418264 11.7515 0.0839947 12.7115C0.126163 13.6679 0.280963 14.3254 0.502518 14.8952C0.731078 15.4999 1.08614 16.0414 1.54326 16.4915C1.99338 16.9486 2.53841 17.3038 3.13618 17.5288C3.70937 17.7504 4.36332 17.905 5.31987 17.9472C6.27971 17.9895 6.58574 17.9999 9.02957 17.9999C11.4734 17.9999 11.7793 17.9895 12.7393 17.9472C13.6957 17.905 14.3532 17.7504 14.9228 17.5288C16.1325 17.0611 17.0889 16.1047 17.5566 14.8952C17.778 14.322 17.9328 13.6679 17.975 12.7115C18.0172 11.7515 18.0278 11.4456 18.0278 9.00176C18.0278 6.55792 18.0242 6.25203 17.982 5.29205ZM16.3611 12.6411C16.3224 13.5202 16.1747 13.9949 16.0516 14.3114C15.7492 15.0956 15.1268 15.7179 14.3426 16.0204C14.0262 16.1434 13.548 16.2911 12.6724 16.3297C11.723 16.372 11.4382 16.3824 9.03658 16.3824C6.63491 16.3824 6.3466 16.372 5.40063 16.3297C4.52155 16.2911 4.04685 16.1434 3.73038 16.0204C3.34015 15.8761 2.98495 15.6476 2.69664 15.3487C2.39776 15.0568 2.1692 14.7052 2.02497 14.315C1.9019 13.9985 1.75424 13.5202 1.71565 12.6447C1.67334 11.6953 1.6629 11.4104 1.6629 9.00876C1.6629 6.60709 1.67334 6.31878 1.71565 5.37295C1.75424 4.49387 1.9019 4.01917 2.02497 3.7027C2.1692 3.31234 2.39776 2.95727 2.70021 2.66883C2.99196 2.36994 3.34359 2.14138 3.73395 1.99729C4.05042 1.87422 4.5287 1.72656 5.4042 1.68783C6.35361 1.64566 6.63848 1.63508 9.04001 1.63508C11.4453 1.63508 11.73 1.64566 12.676 1.68783C13.555 1.72656 14.0297 1.87422 14.3462 1.99729C14.7364 2.14138 15.0916 2.36994 15.38 2.66883C15.6788 2.96071 15.9074 3.31234 16.0516 3.7027C16.1747 4.01917 16.3224 4.49731 16.3611 5.37295C16.4033 6.32236 16.4138 6.60709 16.4138 9.00876C16.4138 11.4104 16.4033 11.6917 16.3611 12.6411Z"
+                    fill="white"
+                    fill-opacity="0.6"
+                  />
+                  <path
+                    d="M9.03411 4.37695C6.48135 4.37695 4.41016 6.44801 4.41016 9.0009C4.41016 11.5538 6.48135 13.6249 9.03411 13.6249C11.587 13.6249 13.6581 11.5538 13.6581 9.0009C13.6581 6.44801 11.587 4.37695 9.03411 4.37695ZM9.03411 12.0003C7.37801 12.0003 6.03466 10.6571 6.03466 9.0009C6.03466 7.34467 7.37801 6.00146 9.03411 6.00146C10.6903 6.00146 12.0335 7.34467 12.0335 9.0009C12.0335 10.6571 10.6903 12.0003 9.03411 12.0003Z"
+                    fill="white"
+                    fill-opacity="0.6"
+                  />
+                  <path
+                    d="M14.9208 4.19471C14.9208 4.79084 14.4375 5.27419 13.8412 5.27419C13.2451 5.27419 12.7617 4.79084 12.7617 4.19471C12.7617 3.59845 13.2451 3.11523 13.8412 3.11523C14.4375 3.11523 14.9208 3.59845 14.9208 4.19471Z"
+                    fill="white"
+                    fill-opacity="0.6"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_653_1047">
+                    <rect width="18" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <!-- mail -->
+          <div
+            class="flex flex-row justify-between items-center bg-[#fff] lg:w-[700px] h-[80px]"
+          >
+            <div
+              class="flex justify-center items-center mx-[15px] lg:ml-[30px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 36"
+                fill="none"
+                class="w-[30px] lg:w-[36px]"
+              >
+                <g clip-path="url(#clip0_653_821)">
+                  <path
+                    d="M23.7423 30.5902C23.253 30.5902 22.8095 30.3027 22.6068 29.8512L22.6067 29.851L17.5066 18.4937L6.14921 13.3936C5.68852 13.1866 5.39863 12.7292 5.41051 12.2283C5.42204 11.7444 5.71925 11.3178 6.16777 11.1414L34.3336 0.0633612C34.7867 -0.114811 35.305 -0.00378719 35.6546 0.345877C36.0041 0.695541 36.1149 1.21395 35.9368 1.66663L24.8589 29.8325C24.6824 30.2811 24.2558 30.5783 23.772 30.5898C23.7621 30.59 23.7522 30.5902 23.7423 30.5902ZM8.73889 12.3212L18.6141 16.7558C18.895 16.8821 19.1188 17.1059 19.2446 17.3862L23.679 27.2614L33.3646 2.6356L8.73889 12.3212Z"
+                    fill="#FF7000"
+                  />
+                  <path
+                    d="M18.2559 18.7643C17.9949 18.7643 17.734 18.6647 17.535 18.4657C17.1368 18.0675 17.1368 17.422 17.535 17.0239L23.8696 10.6893C24.2677 10.2911 24.9133 10.2911 25.3114 10.6893C25.7096 11.0874 25.7096 11.7329 25.3114 12.1311L18.9768 18.4657C18.7777 18.6647 18.5168 18.7643 18.2559 18.7643Z"
+                    fill="#FF7000"
+                  />
+                  <path
+                    d="M6.25392 30.7658C5.99299 30.7658 5.73206 30.6663 5.53301 30.4672C5.13483 30.0691 5.13483 29.4235 5.53301 29.0254L12.8389 21.7195C13.237 21.3214 13.8826 21.3214 14.2807 21.7195C14.6789 22.1176 14.6789 22.7632 14.2807 23.1613L6.97484 30.4672C6.77578 30.6663 6.51485 30.7658 6.25392 30.7658Z"
+                    fill="#FF7000"
+                  />
+                  <path
+                    d="M11.1797 35.9887C10.9188 35.9887 10.6578 35.8891 10.4588 35.6901C10.0606 35.292 10.0606 34.6464 10.4588 34.2483L15.1653 29.5417C15.5634 29.1436 16.209 29.1436 16.6071 29.5417C17.0053 29.9399 17.0053 30.5855 16.6071 30.9836L11.9006 35.6901C11.7016 35.8891 11.4406 35.9887 11.1797 35.9887Z"
+                    fill="#FF7000"
+                  />
+                  <path
+                    d="M1.02346 25.8325C0.762525 25.8325 0.501666 25.733 0.302541 25.5339C-0.0956387 25.1358 -0.0956387 24.4902 0.302541 24.0921L5.00905 19.3855C5.40723 18.9874 6.0527 18.9874 6.45088 19.3855C6.84906 19.7837 6.84906 20.4293 6.45088 20.8274L1.74437 25.5339C1.54531 25.7329 1.28431 25.8325 1.02346 25.8325Z"
+                    fill="#FF7000"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_653_821">
+                    <rect width="36" height="36" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p
+                class="text-[14px] font-normal lg:text-[15px] lg:font-medium text-[#004F71] ml-[20px]"
+              >
+                Sign up <br />
+                Newsletter
+              </p>
+            </div>
+
+            <div
+              class="flex justify-center items-center h-[40px] border-solid border-l-2 border-[#ccc]"
+            >
+              <input
+                type="text"
+                placeholder="mail@yourmail.com"
+                class="w-[170px] ml-[15px] lg:ml-[30px] h-[40px] outline-none font-normal text-lg lg:w-full"
+              />
+            </div>
+
+            <button
+              class="w-[100px] lg:w-[207px] h-[60px] bg-[#FF7000] text-[#fff] mr-[10px] leading-9 font-bold"
+            >
+              SIGN UP
+            </button>
+          </div>
+        </div>
+        <!-- contact us  -->
+        <div class="mt-[108px] flex flex-col justify-center lg:flex-row">
+          <!-- left side  -->
+          <div class="flex flex-col gap-10 w-1/2">
+            <div class="flex items-center">
+              <svg
+                class="inline-block mr-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_653_796)">
+                  <path
+                    d="M20.4662 7.73277H21.599C22.1647 7.73277 22.7074 7.95753 23.1075 8.35761C23.5075 8.75769 23.7323 9.30033 23.7323 9.86609V14.1327C23.7323 14.6986 23.5075 15.2412 23.1075 15.6413C22.7074 16.0414 22.1647 16.2661 21.599 16.2661H20.4662C20.2063 18.3284 19.2027 20.2249 17.6437 21.5997C16.0847 22.9745 14.0775 23.733 11.999 23.7327V21.5994C13.6963 21.5994 15.3242 20.9251 16.5244 19.7249C17.7247 18.5246 18.399 16.8968 18.399 15.1994V8.79945C18.399 7.10205 17.7247 5.47418 16.5244 4.27395C15.3242 3.07372 13.6963 2.39943 11.999 2.39943C10.3015 2.39943 8.6737 3.07372 7.47347 4.27395C6.27324 5.47418 5.59895 7.10205 5.59895 8.79945V16.2661H2.39895C1.83316 16.2661 1.29054 16.0414 0.890467 15.6413C0.490386 15.2412 0.265625 14.6986 0.265625 14.1327V9.86609C0.265625 9.30033 0.490386 8.75769 0.890467 8.35761C1.29054 7.95753 1.83316 7.73277 2.39895 7.73277H3.53175C3.79015 5.66934 4.79315 3.77128 6.35229 2.39521C7.91143 1.01914 9.91938 0.259766 11.999 0.259766C14.0785 0.259766 16.0865 1.01914 17.6456 2.39521C19.2047 3.77128 20.2078 5.66934 20.4662 7.73277ZM2.39895 9.86609V14.1327H3.46563V9.86609H2.39895ZM20.5323 9.86609V14.1327H21.599V9.86609H20.5323ZM7.47629 16.0367L8.60698 14.2234C9.62442 14.8584 10.7996 15.1951 11.999 15.1951C13.1983 15.1951 14.3735 14.8584 15.391 14.2234L16.5216 16.0367C15.1651 16.8837 13.5981 17.3327 11.999 17.3327C10.3998 17.3327 8.83274 16.8837 7.47629 16.0367Z"
+                    fill="#FF7000"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_653_796">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p
+                class="text-white text-opacity-70 text-xl font-medium leading-7"
+              >
+                +90 216 123 45 67
+              </p>
+            </div>
+            <div class="flex items-center">
+              <svg
+                class="inline-block mr-[20px]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_653_801)">
+                  <path
+                    d="M23.512 10.3505C23.0928 7.29506 21.477 4.53134 19.0201 2.66728C16.5632 0.803213 13.4664 -0.0084995 10.411 0.410708C7.35561 0.829916 4.59189 2.4457 2.72782 4.90262C0.86376 7.35953 0.0520474 10.4563 0.471255 13.5117C0.816627 16.0406 1.97875 18.3874 3.78075 20.1949C5.58275 22.0025 7.92596 23.1718 10.4538 23.525C10.971 23.5927 11.4921 23.6268 12.0138 23.627C14.1214 23.6304 16.1895 23.0553 17.9928 21.9642C18.1193 21.888 18.2296 21.7876 18.3174 21.6687C18.4051 21.5498 18.4686 21.4149 18.5042 21.2715C18.5398 21.1281 18.5468 20.9791 18.5248 20.833C18.5028 20.6869 18.4522 20.5465 18.376 20.42C18.2998 20.2934 18.1994 20.1831 18.0805 20.0953C17.9616 20.0076 17.8267 19.9441 17.6833 19.9085C17.3937 19.8366 17.0874 19.8828 16.8318 20.0367C15.5482 20.8071 14.0989 21.259 12.605 21.3544C11.1111 21.4499 9.61599 21.1863 8.24484 20.5855C6.87369 19.9848 5.66634 19.0645 4.72377 17.9015C3.7812 16.7385 3.13083 15.3668 2.82706 13.9009C2.52329 12.4351 2.57495 10.9178 2.97773 9.47608C3.3805 8.03431 4.12268 6.70996 5.14217 5.6138C6.16166 4.51765 7.42883 3.68156 8.83766 3.17549C10.2465 2.66942 11.756 2.50808 13.24 2.70496C14.6184 2.88823 15.9387 3.37581 17.1054 4.13238C18.272 4.88896 19.2558 5.89558 19.9853 7.07931C20.7149 8.26304 21.172 9.59423 21.3235 10.9764C21.4751 12.3587 21.3173 13.7573 20.8615 15.071C20.7432 15.3869 20.5296 15.6581 20.2502 15.8471C19.9708 16.036 19.6395 16.1333 19.3023 16.1255C18.8579 16.1249 18.4319 15.9481 18.1176 15.6338C17.8034 15.3196 17.6266 14.8936 17.626 14.4492V7.50046C17.626 7.20209 17.5075 6.91594 17.2965 6.70496C17.0855 6.49398 16.7994 6.37546 16.501 6.37546C16.2026 6.37546 15.9165 6.49398 15.7055 6.70496C15.4945 6.91594 15.376 7.20209 15.376 7.50046V7.51096C14.5231 6.86726 13.5046 6.4798 12.4395 6.39391C11.3745 6.30801 10.307 6.52725 9.36202 7.02595C8.41703 7.52466 7.63363 8.2822 7.10351 9.20992C6.57338 10.1376 6.31845 11.1972 6.36856 12.2645C6.41867 13.3318 6.77175 14.3628 7.38647 15.2368C8.00118 16.1108 8.85211 16.7916 9.83967 17.1995C10.8272 17.6075 11.9106 17.7258 12.9629 17.5405C14.0152 17.3552 14.993 16.874 15.7818 16.1532C16.1004 16.817 16.5998 17.3776 17.2224 17.7706C17.8451 18.1637 18.5659 18.3733 19.3023 18.3755C20.1072 18.3832 20.8946 18.1401 21.555 17.6799C22.2155 17.2197 22.7162 16.5653 22.9878 15.8075C23.594 14.056 23.7738 12.1853 23.512 10.3505ZM12.001 15.3755C11.3335 15.3755 10.681 15.1775 10.126 14.8067C9.57094 14.4358 9.13836 13.9087 8.88291 13.292C8.62747 12.6753 8.56063 11.9967 8.69085 11.342C8.82108 10.6873 9.14252 10.086 9.61452 9.61397C10.0865 9.14197 10.6879 8.82053 11.3426 8.69031C11.9973 8.56008 12.6759 8.62692 13.2926 8.88236C13.9093 9.13781 14.4364 9.57039 14.8072 10.1254C15.1781 10.6804 15.376 11.3329 15.376 12.0005C15.375 12.8953 15.0191 13.7531 14.3864 14.3858C13.7537 15.0186 12.8958 15.3745 12.001 15.3755Z"
+                    fill="white"
+                    fill-opacity="0.7"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_653_801">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p
+                class="text-white text-opacity-70 text-xl font-medium leading-7"
+              >
+                info@parktesanesi.com
+              </p>
+            </div>
+            <div class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="inline-block mr-[20px]"
+              >
+                <path
+                  d="M20.544 3.46008C19.656 2.91908 18.574 2.878 17.65 3.354L15.439 4.48901C15.161 4.63201 14.841 4.63201 14.563 4.48901L10.352 2.32703C9.93502 2.11303 9.47802 2.00703 9.02002 2.00403C9.01302 2.00403 9.00801 2 9.00101 2C8.99401 2 8.98903 2.00403 8.98203 2.00403C8.52402 2.00703 8.06702 2.11303 7.64902 2.32703L4.20203 4.09802C2.84403 4.79502 2 6.19204 2 7.74304V17.9199C2 19.0029 2.54501 19.982 3.45801 20.54C4.34601 21.081 5.42702 21.122 6.35202 20.646L8.56302 19.511C8.84102 19.368 9.16103 19.368 9.43903 19.511L13.65 21.6731C14.069 21.8881 14.529 21.996 14.989 21.998C14.993 21.998 14.997 22 15.001 22C15.005 22 15.009 21.998 15.013 21.998C15.473 21.996 15.933 21.8881 16.352 21.6731L19.799 19.9021C21.157 19.2051 22.001 17.8081 22.001 16.2571V6.08008C22.002 4.99708 21.457 4.01808 20.544 3.46008ZM5.44 18.865C5.007 19.087 4.64001 18.9151 4.50201 18.8311C4.19001 18.6401 4.00201 18.299 4.00201 17.918V7.74097C4.00201 6.94297 4.429 6.22798 5.117 5.87598L8.00201 4.39404V17.6001C7.88501 17.6421 7.763 17.672 7.651 17.73L5.44 18.865ZM10.353 17.73C10.241 17.672 10.119 17.6431 10.002 17.6001V4.39307L13.651 6.26697C13.763 6.32497 13.885 6.35397 14.002 6.39697V19.604L10.353 17.73ZM20.002 16.2571C20.002 17.0551 19.575 17.7701 18.887 18.1221L16.002 19.604V6.39697C16.119 6.35497 16.241 6.32497 16.353 6.26697L18.564 5.13208C18.996 4.90908 19.364 5.08202 19.502 5.16602C19.814 5.35702 20.002 5.69798 20.002 6.07898V16.2571Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+              </svg>
+              <p
+                class="w-[434px] text-white text-opacity-70 text-xl font-medium leading-7"
+              >
+                Soğanlık Mevkii, E-5 Yanyol Üzeri, Orta Mah. <br />
+                Kanuni Sok. No:1 Kat:3 34880 Kartal, İstanbul
+              </p>
+            </div>
+          </div>
+          <!-- right side  -->
+          <div class="w-1/2 flex flex-row gap-[120px] ml-[135px]">
+            <div class="flex flex-col gap-6 mt-[-7px]">
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                About Us
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                News & Insight
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Sustainability
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Layout
+              </p>
+            </div>
+            <div class="flex flex-col gap-6 mt-[-7px]">
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Contact Us
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Ship Building
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Ship Repair
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Media
+              </p>
+            </div>
+            <div class="flex flex-col gap-6 mt-[-7px]">
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Ship Building
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Contact Us
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Media
+              </p>
+              <p
+                class="text-white text-opacity-60 text-2xl font-normal leading-9"
+              >
+                Ship Repair
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- hr  -->
+        <div
+          class="w-[1542px] h-[0px] border-2 border-white border-opacity-5 mt-[117px]"
+        ></div>
+        <!-- Privacy -->
+        <div class="flex flex-row justify-between items-center mt-[40px]">
+          <p class="text-white text-opacity-70 text-xl font-normal leading-7">
+            Copyright © 2023 Park Tersanesi.
+          </p>
+          <div class="flex justify-center items-center gap-[80px]">
+            <p class="text-white text-opacity-60 text-xl font-medium leading-7">
+              Privacy Policy
+            </p>
+            <p class="text-white text-opacity-60 text-xl font-medium leading-7">
+              Terms of Service
+            </p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_653_811)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.6768 0C1.6462 0 0 1.7906 0 3.99933V30H26.3232C28.3538 30 30 28.2094 30 26.0007V0H3.6768ZM27.4525 27.2286H2.54793V2.77144H27.4525V27.2286Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.83214 14.1466H25.3595V4.62695H4.5625V25.4794H7.83214V14.1466ZM22.9265 7.60941V11.175H7.83214V7.60941H22.9265Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.4659 15.3379L16.796 19.6907L12.8932 15.5046H8.66797L17.3249 25.5093L22.1932 25.4793L18.8761 21.9215L25.3567 15.3379H21.4659Z"
+                  fill="white"
+                  fill-opacity="0.7"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_653_811">
+                  <rect width="30" height="30" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p
+              class="text-white text-opacity-70 text-lg font-normal leading-9 ml-6"
+            >
+              Web Design
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ICON SCRİPT -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- GSAP SCRİPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap-text-plugin@3.9.2/dist/gsap-text-plugin.min.js"></script>
+    <!-- SCRİPT -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
