@@ -1,0 +1,21 @@
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f39c12;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animation:hover::before {
+  width: 100%;
+}
+
+/* =================================================================== */

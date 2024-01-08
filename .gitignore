@@ -1,0 +1,8 @@
+# Geçici dosyalar
+*.tmp
+
+# Derleme çıktıları
+/build/
+
+# Node.js için bağımlılıklar
+node_modules/
